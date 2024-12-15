@@ -62,17 +62,18 @@ namespace Github_kezdes
             Console.WriteLine($"Ennyi db pozitív szám van a tömbben: {f02(args)}");
             Console.WriteLine($"A tömb elemeinek átlaga: {f03(args)}");
             Console.WriteLine("A tömbből alkotott páratlan számok:");
-            foreach (var item in args)
+            foreach (var item in f04(args))
             {
-                Console.Write(f04(args)[item]+ ", ");
+                Console.Write(item+ ", ");
             }
             Console.WriteLine();
         }
 
         static void Main(string[] args)
         {
-            int[] args1 = new int[10];
-            f01(args1);
+            int[] szamok = new int[10];
+            f01(szamok);
+            f05(szamok);
             
         }
     }
